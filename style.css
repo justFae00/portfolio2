@@ -22,6 +22,10 @@ h3 {
   font-family: "Montserrat Alternates";
 }
 
+h2 {
+  color: #6a6a70;
+}
+
 .navbar {
   position: fixed;
   left: 30px;
@@ -396,6 +400,7 @@ h3 {
   gap: 12px;
   margin-top: 10px;
   align-items: flex-start;
+  font-family: system-ui, sans-serif;
 }
 
 .contact-box {
