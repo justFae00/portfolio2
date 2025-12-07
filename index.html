@@ -1,0 +1,468 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Hero</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bad+Script&family=Charmonman:wght@400;700&family=Gloria+Hallelujah&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Naskh+Arabic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="top"></div>
+    <nav class="navbar">
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#top" class="active">
+            <img
+              class="icon"
+              src="svg icons/home-smile-angle-svgrepo-com.svg"
+              alt="home"
+            />
+            <span class="label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <img class="icon" src="svg icons/cat-svgrepo-com.svg" alt="about" />
+            <span class="label">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <img
+              class="icon"
+              src="svg icons/phone-calling-svgrepo-com.svg"
+              alt="contact"
+            />
+            <span class="label">Contact</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <img
+              class="icon"
+              src="svg icons/layers-minimalistic-svgrepo-com.svg"
+              alt="projects"
+            />
+            <span class="label">Projects</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero" id="home">
+      <svg
+        class="circle"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <filter id="squiggly-0">
+            <feTurbulence
+              baseFrequency="0.02"
+              numOctaves="3"
+              seed="0"
+              result="noise"
+            />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+          </filter>
+
+          <filter id="squiggly-1">
+            <feTurbulence
+              baseFrequency="0.02"
+              numOctaves="3"
+              seed="1"
+              result="noise"
+            />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+          </filter>
+
+          <filter id="squiggly-2">
+            <feTurbulence
+              baseFrequency="0.02"
+              numOctaves="3"
+              seed="2"
+              result="noise"
+            />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+          </filter>
+
+          <filter id="squiggly-3">
+            <feTurbulence
+              baseFrequency="0.02"
+              numOctaves="3"
+              seed="3"
+              result="noise"
+            />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+          </filter>
+
+          <filter id="squiggly-4">
+            <feTurbulence
+              baseFrequency="0.02"
+              numOctaves="3"
+              seed="4"
+              result="noise"
+            />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+          </filter>
+        </defs>
+
+        <circle cx="100" cy="100" r="100"></circle>
+
+        <text class="circle-title" x="50%" y="50%" text-anchor="middle" dy="-4">
+          Faeze Ebrahimi
+        </text>
+
+        <text
+          class="circle-subtitle squiggly"
+          x="50%"
+          y="50%"
+          dy="12"
+          text-anchor="middle"
+        >
+          a portfolio
+        </text>
+      </svg>
+
+      <img
+        src="images/cloud1.png"
+        class="cloud cloud1 moveable"
+        alt="cloud bottom left"
+      />
+      <img
+        src="images/cloud2.png"
+        class="cloud cloud2 moveable"
+        alt="cloud top right"
+      />
+    </div>
+
+    <section class="about" id="about">
+      <h2>about me</h2>
+      <div class="about-text">
+        <p>
+          I'm a UI/UX designer with a strong technical background and a passion
+          for innovative problem-solving. With expertise in coding and a keen
+          interest in AI-driven design, I thrive on exploring how intelligent
+          tools can elevate user experiences and optimize the design workflow.
+        </p>
+      </div>
+
+      <div class="about-columns">
+        <div class="column">
+          <div class="education">
+            <h3>EDUCATION</h3>
+            <p>
+              computer engineering, Shiraz University<br />
+              <span class="date">September 2022 – Now</span>
+            </p>
+            <p>
+              Product Design Course, UserX Academy<br />
+              <span class="date">September 2023 – December 2023</span>
+            </p>
+          </div>
+
+          <div class="design-skills">
+            <h3>DESIGN SKILLS</h3>
+            <div class="tags design-skill-list">
+              <a class="skill-btn-rect" href="#">wireframing<span></span></a>
+              <a class="skill-btn-rect" href="#">user flows<span></span></a>
+              <a class="skill-btn-rect" href="#">design systems<span></span></a>
+              <a class="skill-btn-rect" href="#">usability<span></span></a>
+              <a class="skill-btn-rect" href="#"
+                >responsive design<span></span
+              ></a>
+            </div>
+          </div>
+
+          <div class="softwares">
+            <h3>SOFTWARES</h3>
+            <div class="icons skill-icons">
+              <ul class="skill-list">
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/figma.svg"
+                      alt="Figma"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/photoshop.svg"
+                      alt="Photoshop"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/illustrator.svg"
+                      alt="Illustrator"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/xd.svg"
+                      alt="Adobe XD"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="languages">
+            <h3>LANGUAGES</h3>
+            <div class="languages-list">
+              <p class="lang-item">
+                Persian <span class="lang-level">native</span>
+              </p>
+
+              <p class="lang-item">
+                English <span class="lang-level">advanced</span>
+              </p>
+
+              <p class="lang-item">
+                German <span class="lang-level">beginner</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="experience">
+            <h3>EXPERIENCE</h3>
+            <p>
+              UI/UX Designer, <span class="highlight">MehraShop</span><br />
+              <span class="date">November 2024 – October 2025</span>
+            </p>
+            <p>
+              Translator, <span class="highlight">Aanja Pub</span><br />
+              <span class="date">May 2024</span>
+            </p>
+          </div>
+
+          <div class="soft-skills">
+            <h3>SOFT SKILLS</h3>
+            <div class="tags soft-skill-list">
+              <a class="skill-btn-rect" href="#"
+                >problem-solving<span></span
+              ></a>
+              <a class="skill-btn-rect" href="#">team-work<span></span></a>
+              <a class="skill-btn-rect" href="#">adaptability<span></span></a>
+              <a class="skill-btn-rect" href="#"
+                >attention to detail<span></span
+              ></a>
+            </div>
+          </div>
+
+          <div class="coding-skills">
+            <h3>CODING SKILLS</h3>
+            <div class="icons skill-icons">
+              <ul class="skill-list">
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/java.svg"
+                      alt="Java"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/html.svg"
+                      alt="HTML"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="skill-btn">
+                    <img class="skill-icon" src="svg icons/css.svg" alt="CSS" />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="skill-btn">
+                    <img
+                      class="skill-icon"
+                      src="svg icons/js.svg"
+                      alt="JavaScript"
+                    />
+                    <span class="skill-bg"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <h2>CONTACT</h2>
+
+        <div class="contact-list">
+          <a href="mailto:5faezeh.7@gmail.com" class="contact-box">
+            <div class="contact-bg"></div>
+            <img src="svg icons/email.svg" class="contact-icon" alt="email" />
+            <span class="contact-text">5faezeh.7@gmail.com</span>
+          </a>
+
+          <a
+            href="https://www.behance.net/justFae00"
+            target="_blank"
+            class="contact-box"
+          >
+            <div class="contact-bg"></div>
+            <img
+              src="svg icons/behance.svg"
+              class="contact-icon"
+              alt="behance"
+            />
+            <span class="contact-text">behance.net/justFae00</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/faeze-ebrahimi-95815328b"
+            target="_blank"
+            class="contact-box"
+          >
+            <div class="contact-bg"></div>
+            <img
+              src="svg icons/linkedin.svg"
+              class="contact-icon"
+              alt="linkedin"
+            />
+            <span class="contact-text">linkedin.com/in/faeze-ebrahimi</span>
+          </a>
+          <a
+            href="https://www.github.com/justFae00"
+            target="_blank"
+            class="contact-box"
+          >
+            <div class="contact-bg"></div>
+            <img src="svg icons/github.svg" class="contact-icon" alt="github" />
+            <span class="contact-text">github.com/justFae00</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div>
+        <div id="projects-title"><h2>PROJECTS</h2></div>
+
+        <a
+          href="https://www.behance.net/gallery/205030149/Training-Mobile-App"
+          target="_blank"
+          class="tile"
+        >
+          <img src="images/excercise.png" alt="Training Mobile App" />
+          <div class="details">
+            <span class="title">Training Mobile App</span>
+            <span class="info">
+              A clean and modern training app UI featuring organized workout
+              categories and a simple progress dashboard.
+            </span>
+          </div>
+        </a>
+
+        <a
+          href="https://www.behance.net/gallery/226274535/Plant-Growth-Tracker"
+          target="_blank"
+          class="tile"
+        >
+          <img src="images/plant care thumb.png" alt="Plant Growth Tracker" />
+          <div class="details">
+            <span class="title">Plant Growth Tracker</span>
+            <span class="info">
+              A calm and intuitive plant-care app that helps users identify
+              plants, track growth, and get smart reminders.
+            </span>
+          </div>
+        </a>
+
+        <a
+          href="https://www.behance.net/gallery/226668821/TRAI-Futuristic-AI-Landing-Page-Concept"
+          target="_blank"
+          class="tile"
+        >
+          <img src="images/ai hero.png" alt="AI Landing Page Concept" />
+          <div class="details">
+            <span class="title">AI Landing Page Concept</span>
+            <span class="info">
+              A futuristic landing page concept using bold gradients and
+              immersive visuals for an advanced AI platform.
+            </span>
+          </div>
+        </a>
+
+        <a
+          href="https://www.behance.net/gallery/206351555/Movie-Streaming-Concept"
+          target="_blank"
+          class="tile"
+        >
+          <img src="images/movie.png" alt="Movie Streaming Concept" />
+          <div class="details">
+            <span class="title">Movie Streaming Concept</span>
+            <span class="info">
+              A cinematic streaming layout with personalized recommendations and
+              strong visual hierarchy.
+            </span>
+          </div>
+        </a>
+
+        <a
+          href="https://www.behance.net/gallery/205025979/Banking-Mobile-App"
+          target="_blank"
+          class="tile"
+        >
+          <img src="images/bank.png" alt="Banking Mobile App" />
+          <div class="details">
+            <span class="title">Banking Mobile App</span>
+            <span class="info">
+              A clean and modern banking app made for easy financial tracking
+              and smart analytics.
+            </span>
+          </div>
+        </a>
+      </div>
+      <p>and more! you can check them out on my Behance</p>
+    </section>
+
+    <section class="personal"></section>
+
+    <section class="footer">
+      <div class="footer-copyright">
+        <p>&copy; 2025 Faeze Ebrahimi. All rights reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>
